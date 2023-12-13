@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="displays">
+                    <input type="text" name="display" id="display">
+                </div>
+                <div> 
+                    <input type="button" class="acDel" value="AC" onclick = "clearDisplay()">
+                    <input type="button" class="acDel" value="Del" onclick = "del()">
+                    <input type="button" class="symbols" value="." onclick = "append('.')" >
+                    <input type="button" class="symbols" value="/" onclick = "append('/')" >
+                </div>
+                <div> 
+                    <input type="button" class="numbers" value="7" onclick = "append('7')" >
+                    <input type="button" class="numbers" value="8" onclick = "append('8')" >
+                    <input type="button" class="numbers" value="9" onclick = "append('9')" >
+                    <input type="button" class="symbols" value="*" onclick = "append('*')" >
+                </div>
+                <div> 
+                    <input type="button" class="numbers" value="4" onclick = "append('4')" >
+                    <input type="button" class="numbers" value="5" onclick = "append('5')" >
+                    <input type="button" class="numbers" value="6" onclick = "append('6')" >
+                    <input type="button" class="symbols" value="-" onclick = "append('-')">
+                </div>
+                <div> 
+                    <input type="button" class="numbers" value="1" onclick = "append('1')" >
+                    <input type="button" class="numbers" value="2" onclick = "append('2')" >
+                    <input type="button" class="numbers" value="3" onclick = "append('3')">
+                    <input type="button" class="symbols" value="+" onclick = "append('+')">
+                </div>
+                <div> 
+                    <input type="button" class="zeros" value="00" onclick = "append('00')" >
+                    <input type="button" class="zeros" value="0" onclick = "append('0')" >
+                    <input type="button" class="equalTo" value="=" onclick = "calculate()">
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
